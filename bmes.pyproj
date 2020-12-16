@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>460601e1-d940-4834-a7f8-c1d9066a4c8a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>bmes</Name>
+    <RootNamespace>bmes</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bmes\cartbp\cart_service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\cartbp\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\cartbp\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\cartbp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\cataloguebp\catalogue_service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\cataloguebp\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\cataloguebp\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\cataloguebp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\checkoutbp\checkout_service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\checkoutbp\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\checkoutbp\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\checkoutbp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\locationbp\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\locationbp\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\locationbp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\orderbp\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\orderbp\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\orderbp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\sharedbp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\userbp\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\userbp\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmes\userbp\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="migrations\env.py" />
+    <Compile Include="migrations\versions\084ba163e82f_.py" />
+    <Compile Include="migrations\versions\20bae73f34b1_.py" />
+    <Compile Include="migrations\versions\bfeb72773ff7_.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="bmes\__init__.py" />
+    <Compile Include="bmes\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bmes\" />
+    <Folder Include="bmes\cartbp\" />
+    <Folder Include="bmes\cartbp\static\content\" />
+    <Folder Include="bmes\cartbp\static\content\scss\" />
+    <Folder Include="bmes\cartbp\static\content\scss\partials\" />
+    <Folder Include="bmes\cartbp\templates\" />
+    <Folder Include="bmes\cartbp\static\" />
+    <Folder Include="bmes\cartbp\templates\cartbp\" />
+    <Folder Include="bmes\cartbp\templates\cartbp\partials\" />
+    <Folder Include="bmes\cataloguebp\" />
+    <Folder Include="bmes\cataloguebp\static\content\" />
+    <Folder Include="bmes\cataloguebp\static\content\scss\" />
+    <Folder Include="bmes\cataloguebp\static\content\scss\partials\" />
+    <Folder Include="bmes\cataloguebp\templates\" />
+    <Folder Include="bmes\cataloguebp\static\" />
+    <Folder Include="bmes\cataloguebp\templates\cataloguebp\" />
+    <Folder Include="bmes\cataloguebp\templates\cataloguebp\partials\" />
+    <Folder Include="bmes\checkoutbp\" />
+    <Folder Include="bmes\checkoutbp\static\content\" />
+    <Folder Include="bmes\checkoutbp\static\content\scss\" />
+    <Folder Include="bmes\checkoutbp\static\content\scss\partials\" />
+    <Folder Include="bmes\checkoutbp\templates\" />
+    <Folder Include="bmes\checkoutbp\static\" />
+    <Folder Include="bmes\checkoutbp\templates\checkoutbp\" />
+    <Folder Include="bmes\locationbp\" />
+    <Folder Include="bmes\orderbp\" />
+    <Folder Include="bmes\sharedbp\" />
+    <Folder Include="bmes\static\" />
+    <Folder Include="bmes\static\content\" />
+    <Folder Include="bmes\static\content\scss\" />
+    <Folder Include="bmes\static\content\scss\partials\" />
+    <Folder Include="bmes\static\fonts\" />
+    <Folder Include="bmes\static\images\" />
+    <Folder Include="bmes\static\images\productimages\" />
+    <Folder Include="bmes\static\images\productimages\main\" />
+    <Folder Include="bmes\static\images\productimages\thumbnials\" />
+    <Folder Include="bmes\static\scripts\" />
+    <Folder Include="bmes\templates\" />
+    <Folder Include="bmes\userbp\" />
+    <Folder Include="migrations\" />
+    <Folder Include="migrations\versions\" />
+    <Folder Include="migrations\versions\__pycache__\" />
+    <Folder Include="migrations\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bmes\bmeswebapp.db" />
+    <Content Include="bmes\cartbp\static\content\scss\cartbp.scss" />
+    <Content Include="bmes\cartbp\static\content\scss\partials\cart_detail.scss" />
+    <Content Include="bmes\cartbp\static\content\scss\partials\cart_summary_widget.scss" />
+    <Content Include="bmes\cartbp\templates\cartbp\cart_detail.html" />
+    <Content Include="bmes\cartbp\templates\cartbp\partials\cart_summary_widget.html" />
+    <Content Include="bmes\cataloguebp\static\content\scss\cataloguebp.scss" />
+    <Content Include="bmes\cataloguebp\static\content\scss\partials\brand.scss" />
+    <Content Include="bmes\cataloguebp\static\content\scss\partials\catalogue.scss" />
+    <Content Include="bmes\cataloguebp\static\content\scss\partials\category.scss" />
+    <Content Include="bmes\cataloguebp\static\content\scss\partials\pagination.scss" />
+    <Content Include="bmes\cataloguebp\static\content\scss\partials\product_list.scss" />
+    <Content Include="bmes\cataloguebp\static\content\scss\partials\product_list_item.scss" />
+    <Content Include="bmes\cataloguebp\templates\cataloguebp\catalogue.html" />
+    <Content Include="bmes\cataloguebp\templates\cataloguebp\partials\brand.html" />
+    <Content Include="bmes\cataloguebp\templates\cataloguebp\partials\category.html" />
+    <Content Include="bmes\cataloguebp\templates\cataloguebp\partials\pagination.html" />
+    <Content Include="bmes\cataloguebp\templates\cataloguebp\partials\product_list.html" />
+    <Content Include="bmes\cataloguebp\templates\cataloguebp\partials\product_list_item.html" />
+    <Content Include="bmes\checkoutbp\static\content\scss\checkoutbp.scss" />
+    <Content Include="bmes\checkoutbp\static\content\scss\partials\checkout.scss" />
+    <Content Include="bmes\checkoutbp\static\content\scss\partials\receipt.scss" />
+    <Content Include="bmes\checkoutbp\templates\checkoutbp\checkout.html" />
+    <Content Include="bmes\checkoutbp\templates\checkoutbp\receipt.html" />
+    <Content Include="bmes\static\content\bmes.css" />
+    <Content Include="bmes\static\content\scss\bmes.scss" />
+    <Content Include="bmes\static\content\scss\partials\layout.scss" />
+    <Content Include="bmes\static\images\productimages\main\040m-x-040m-non-slip-granite-tiles.jpg" />
+    <Content Include="bmes\static\images\productimages\main\2-gang-switch-cover-window-plate.jpg" />
+    <Content Include="bmes\static\images\productimages\main\8-holes-panel-boxbreaker-box.jpg" />
+    <Content Include="bmes\static\images\productimages\main\acrylic-paint-brush.jpg" />
+    <Content Include="bmes\static\images\productimages\main\apollo-back-wall-modern-curved-bath.jpg" />
+    <Content Include="bmes\static\images\productimages\main\appleby-1700-lh-roll-top-shower-bath.jpg" />
+    <Content Include="bmes\static\images\productimages\main\arezzo-round-matt-black.jpg" />
+    <Content Include="bmes\static\images\productimages\main\blind-rivets-500s.jpg" />
+    <Content Include="bmes\static\images\productimages\main\c-channel.jpg" />
+    <Content Include="bmes\static\images\productimages\main\circuit-breaker.jpg" />
+    <Content Include="bmes\static\images\productimages\main\code-1g-fd30-fire-door.png" />
+    <Content Include="bmes\static\images\productimages\main\code-20g-fd30-fire-door.jpg" />
+    <Content Include="bmes\static\images\productimages\main\code-25g-fd30-fire-door.jpg" />
+    <Content Include="bmes\static\images\productimages\main\concrete-nutralizer.jpg" />
+    <Content Include="bmes\static\images\productimages\main\concrete-putty.jpg" />
+    <Content Include="bmes\static\images\productimages\main\conduit-pvc-d-25mm.jpg" />
+    <Content Include="bmes\static\images\productimages\main\convenience-outlet-2-gang.jpg" />
+    <Content Include="bmes\static\images\productimages\main\cotswold-oak-internal-cottage-door-unfinished.jpg" />
+    <Content Include="bmes\static\images\productimages\main\electrical-tape-big.jpg" />
+    <Content Include="bmes\static\images\productimages\main\flat-wall-latex.jpg" />
+    <Content Include="bmes\static\images\productimages\main\flexible-conduit-d-25mm.jpg" />
+    <Content Include="bmes\static\images\productimages\main\grinding-disc-4.jpg" />
+    <Content Include="bmes\static\images\productimages\main\intumescent-pipe-collar.jpg" />
+    <Content Include="bmes\static\images\productimages\main\junction-box-pvc-deep-type.jpg" />
+    <Content Include="bmes\static\images\productimages\main\latex-paint-hansa-yellow.jpg" />
+    <Content Include="bmes\static\images\productimages\main\latex-paint-raw-siena.jpg" />
+    <Content Include="bmes\static\images\productimages\main\latex-paint-thalo-green.jpg" />
+    <Content Include="bmes\static\images\productimages\main\latex-paint-tholudine-red.jpg" />
+    <Content Include="bmes\static\images\productimages\main\led-flourescent-lamp.jpg" />
+    <Content Include="bmes\static\images\productimages\main\light-fiber-cement-board-14-x-4-x-8.jpg" />
+    <Content Include="bmes\static\images\productimages\main\metal-cutting-disc-14.jpg" />
+    <Content Include="bmes\static\images\productimages\main\metal-furring-05mm-12mm-x-38mm-x-5m.jpg" />
+    <Content Include="bmes\static\images\productimages\main\mode-ellis-freestanding-bath.jpg" />
+    <Content Include="bmes\static\images\productimages\main\oak-4-panel-35mm.jpg" />
+    <Content Include="bmes\static\images\productimages\main\orchard-l-shaped-left-handed-shower-bath.jpg" />
+    <Content Include="bmes\static\images\productimages\main\orchard-square-edge-single-ended-bath.jpg" />
+    <Content Include="bmes\static\images\productimages\main\paint-thinner.jpg" />
+    <Content Include="bmes\static\images\productimages\main\primer-paintred-oxide.jpg" />
+    <Content Include="bmes\static\images\productimages\main\recessed-pinlight.jpg" />
+    <Content Include="bmes\static\images\productimages\main\rectangular-ducting.jpg" />
+    <Content Include="bmes\static\images\productimages\main\ring-seal-soil-stack-complete-kit.jpg" />
+    <Content Include="bmes\static\images\productimages\main\rio-oval-inset-basin-1th-520-x-460mm.jpg" />
+    <Content Include="bmes\static\images\productimages\main\roller-paint-brush-pan.jpg" />
+    <Content Include="bmes\static\images\productimages\main\rondo-wall-hung-small-cloakroom-basin.jpg" />
+    <Content Include="bmes\static\images\productimages\main\roper-rhodes-esta-460mm-cloakroom-basin.jpg" />
+    <Content Include="bmes\static\images\productimages\main\round-modern-chrome-basin-bottle-trap.jpg" />
+    <Content Include="bmes\static\images\productimages\main\rs-pro-galvanised-steel-round-tube.jpg" />
+    <Content Include="bmes\static\images\productimages\main\rs-pro-pvc-flexible-tubing-transparent.jpg" />
+    <Content Include="bmes\static\images\productimages\main\sand-paper.jpg" />
+    <Content Include="bmes\static\images\productimages\main\semi-gloss-latex-elastomeric.jpg" />
+    <Content Include="bmes\static\images\productimages\main\tex-screw.jpg" />
+    <Content Include="bmes\static\images\productimages\main\thin-electrical-wire.jpg" />
+    <Content Include="bmes\static\images\productimages\main\tile-adhesive.jpg" />
+    <Content Include="bmes\static\images\productimages\main\tile-cutting-disc-4.jpg" />
+    <Content Include="bmes\static\images\productimages\main\tile-grout.jpg" />
+    <Content Include="bmes\static\images\productimages\main\traditional-luxury-exposed-free.jpg" />
+    <Content Include="bmes\static\images\productimages\main\utility-box-pvc-deep-type.jpg" />
+    <Content Include="bmes\static\images\productimages\main\wall-angle.jpg" />
+    <Content Include="bmes\static\images\productimages\main\wc-basin-pedesta.jpg" />
+    <Content Include="bmes\static\images\productimages\main\welding-rod.jpg" />
+    <Content Include="bmes\static\images\productimages\main\white-painted-pine-top-hung-roof-window.jpg" />
+    <Content Include="migrations\alembic.ini" />
+    <Content Include="migrations\README" />
+    <Content Include="migrations\script.py.mako" />
+    <Content Include="migrations\versions\__pycache__\084ba163e82f_.cpython-37.pyc" />
+    <Content Include="migrations\__pycache__\env.cpython-37.pyc" />
+    <Content Include="requirements.txt" />
+    <Content Include="bmes\static\content\bootstrap.css" />
+    <Content Include="bmes\static\content\bootstrap.min.css" />
+    <Content Include="bmes\static\content\site.css" />
+    <Content Include="bmes\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bmes\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bmes\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bmes\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bmes\static\scripts\bootstrap.js" />
+    <Content Include="bmes\static\scripts\bootstrap.min.js" />
+    <Content Include="bmes\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="bmes\static\scripts\jquery-1.10.2.js" />
+    <Content Include="bmes\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="bmes\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="bmes\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="bmes\static\scripts\jquery.validate.js" />
+    <Content Include="bmes\static\scripts\jquery.validate.min.js" />
+    <Content Include="bmes\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="bmes\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="bmes\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="bmes\static\scripts\respond.js" />
+    <Content Include="bmes\static\scripts\respond.min.js" />
+    <Content Include="bmes\static\scripts\_references.js" />
+    <Content Include="bmes\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
